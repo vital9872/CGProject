@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComputerGraphics.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,7 +22,8 @@ namespace ComputerGraphics.Views
         public FractalView()
         {
             InitializeComponent();
-            DataContext = new ViewModels.FractalViewModel();
+            FractalViewModel vm = new ViewModels.FractalViewModel();
+            DataContext = vm;
         }
     }
 }

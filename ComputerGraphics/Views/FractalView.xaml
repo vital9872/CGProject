@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ComputerGraphics.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="700" d:DesignWidth="1380"
-             >
+             d:DesignHeight="700" d:DesignWidth="1380">
+    
     <Grid  Background="#FFFFFF">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -26,7 +26,7 @@
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition x:Name="ImageColumn" Width="4*"/>
             </Grid.ColumnDefinitions>
             <Border Background="#D0A98F" Style="{StaticResource headerBorder}" Margin="10">
                 <StackPanel >
@@ -34,35 +34,63 @@
                     <Border Background="#EDD4B2" Style="{StaticResource headerBorder}" Margin="10">
                         <StackPanel>
                             <TextBlock Style="{StaticResource textStyle}" TextAlignment="Left" Margin="10">Fractal</TextBlock>
-                            <ComboBox Margin="10" Background="#FBFBFB">
-                                <ComboBoxItem IsSelected="True">Julia</ComboBoxItem>
-                                <ComboBoxItem>Mandelbrot</ComboBoxItem>
+                            <ComboBox Margin="10" Background="#FBFBFB" SelectedIndex="{Binding FractalType}">
+                                <ComboBoxItem IsSelected="True">Mandelbrot</ComboBoxItem>
+                                <ComboBoxItem>Julia</ComboBoxItem>
                             </ComboBox>
                         </StackPanel>
                     </Border>
-                    <Border Background="#EDD4B2" Style="{StaticResource headerBorder}" Margin="10" >
-                        <StackPanel>
-                            <TextBlock Style="{StaticResource textStyle}" TextAlignment="Left" Margin="10">Parameter "C"</TextBlock>
-                            <TextBox Margin="10 0 10 0" Background="#FBFBFB">
-                            </TextBox>
-                            <Button Background="#0E4DA4" HorizontalAlignment="Left" Style="{StaticResource standartBtnStyle}">Apply</Button>
-                        </StackPanel>
+                    <Border Background="#EDD4B2" Style="{StaticResource headerBorder}" Margin="10"
+                            Visibility="{Binding ParameterVisibility}">
+                        <Grid IsEnabled="{Binding CanEnterC}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Style="{StaticResource textStyle}" TextAlignment="Left" Margin="10"
+                                       Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                                Parameter "C"
+                            </TextBlock>
+                            <TextBlock Style="{StaticResource textStyle}" TextAlignment="Left" Margin="10 0"
+                                       Grid.Row="1" Grid.Column="0" FontSize="16">
+                                Real:
+                            </TextBlock>
+                            <TextBlock Style="{StaticResource textStyle}" TextAlignment="Left" Margin="10 0"
+                                       Grid.Row="1" Grid.Column="1" FontSize="16">
+                                Imaginary:
+                            </TextBlock>
+                            <TextBox Background="#FBFBFB" Grid.Row="2" Grid.Column="0" Margin="10 5"
+                                     Text="{Binding Real, Mode=OneWayToSource}"/>
+                            <TextBox Background="#FBFBFB" Grid.Row="2" Grid.Column="1" Margin="10 5"
+                                     Text="{Binding Imaginatory, Mode=OneWayToSource}"/>
+                            <!--<Button Background="#0E4DA4" HorizontalAlignment="Left" 
+                                    Style="{StaticResource standartBtnStyle}"
+                                    Grid.Row="3" Grid.Column="0">
+                                Apply
+                            </Button>-->
+                        </Grid>
                     </Border>
                     <Border Background="#EDD4B2" Style="{StaticResource headerBorder}" Margin="10">
                         <StackPanel>
                             <TextBlock Style="{StaticResource textStyle}" TextAlignment="Left" Margin="10">Color schemes</TextBlock>
-                            <ComboBox Margin="10" Background="#FBFBFB">
-                                <ComboBoxItem IsSelected="True">Scheme 1</ComboBoxItem>
-                                <ComboBoxItem>Scheme 2</ComboBoxItem>
+                            <ComboBox Margin="10" Background="#FBFBFB" SelectedIndex="{Binding SchemeIndex}">
+                                <ComboBoxItem IsSelected="True">Cold</ComboBoxItem>
+                                <ComboBoxItem>Warm</ComboBoxItem>
                             </ComboBox>
                         </StackPanel>
                     </Border>
                     <Border Background="#EDD4B2" Style="{StaticResource headerBorder}" Margin="10">
                         <StackPanel>
                             <TextBlock Style="{StaticResource textStyle}" TextAlignment="Left" Margin="10">Scale</TextBlock>
-                            <TextBox Margin="10 0 10 0" Background="#FBFBFB">
-                            </TextBox>
-                            <Button Background="#0E4DA4" HorizontalAlignment="Left" Style="{StaticResource standartBtnStyle}">Apply</Button>
+                            <TextBox Margin="10" Background="#FBFBFB" Text="{Binding Scale}"/>
+                            <!--<Button Background="#0E4DA4" HorizontalAlignment="Left" Style="{StaticResource standartBtnStyle}">Apply</Button>-->
                         </StackPanel>
                     </Border>
                     <Button Style="{StaticResource buttonStyle}" Width="230" Height="30" FontSize="15" FontWeight="Bold">
@@ -78,10 +106,14 @@
                             <ColumnDefinition Width="2*"/>
                         </Grid.ColumnDefinitions>
                         <Button Style="{StaticResource standartBtnStyle}">Reset</Button>
-                        <Button Grid.Column="2" Background="#1BB55C" Style="{StaticResource standartBtnStyle}">Draw</Button>
+                        <Button Grid.Column="2" Background="#1BB55C" Style="{StaticResource standartBtnStyle}"
+                                Command="{Binding DrawCommand}">
+                            Draw
+                        </Button>
                     </Grid>
                 </StackPanel>
             </Border>
+            <Image Grid.Column="1" Margin="10" Source="{Binding CanvasSource}" x:Name="CanvasImage"/>
         </Grid>
     </Grid>
 </Page>
