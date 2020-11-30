@@ -16,4 +16,8 @@
     <Resource Include="img\information.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Fractions\" />
+  </ItemGroup>
+
 </Project>

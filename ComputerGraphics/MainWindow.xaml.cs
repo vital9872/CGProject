@@ -1,4 +1,5 @@
 ﻿using ComputerGraphics.ViewModels;
+using ComputerGraphics.ViewModels.Paged;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,8 @@ namespace ComputerGraphics
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
+            DataContext = new MainViewModelPaged();
+            MainFrame.Navigate(new Views.MainView());
         }
 
     }

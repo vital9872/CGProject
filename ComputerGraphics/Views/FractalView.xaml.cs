@@ -16,12 +16,12 @@ namespace ComputerGraphics.Views
     /// <summary>
     /// Interaction logic for FractalView.xaml
     /// </summary>
-    public partial class FractalView : UserControl
+    public partial class FractalView : Page
     {
         public FractalView()
         {
             InitializeComponent();
-            
+            DataContext = new ViewModels.FractalViewModel();
         }
     }
 }
