@@ -114,11 +114,17 @@ namespace ComputerGraphics.ViewModels
 			App.Current.MainWindow.Cursor = Cursors.Arrow;
 		});
 
+		public ICommand ResetCommand => new RelayCommand((obj)=>
+		{ 
+			CanvasSource = null;
+			OnPropertyChanged(nameof(CanvasSource));
+		});
+
 		public FractalViewModel()
 		{
 			FractalType = 0;
 			ImageHeight = 1000;
-			ImageWidth = 1000;
+			ImageWidth = 1200;
 			Scale = 1;
 		}
 	}

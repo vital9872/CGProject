@@ -33,7 +33,7 @@ namespace ComputerGraphics.Fractals
 					double b = (double)(y - height / 2) / (height / (4 * scale));
 					Complex z = new Complex(b, a);
 					int i;
-					int iterations = 127;
+					int iterations = 255;
 					for (i = 0; i < iterations; ++i)
 					{
 						z = Function(z);
