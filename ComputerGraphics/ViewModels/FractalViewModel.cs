@@ -91,6 +91,7 @@ namespace ComputerGraphics.ViewModels
 
 		public ICommand DrawCommand => new RelayCommand((obj) =>
 		{
+			App.Current.MainWindow.Cursor = Cursors.Wait;
 			IFractal fractal;
 			if (FractalType == 0)
 				fractal = new MandelbrotFractal();
@@ -110,6 +111,7 @@ namespace ComputerGraphics.ViewModels
 			wbitmap.WritePixels(rect, fractal.GetPixels(ImageWidth, ImageHeight, colorFactory, _scale), stride, 0);
 			CanvasSource = wbitmap;
 			OnPropertyChanged(nameof(CanvasSource));
+			App.Current.MainWindow.Cursor = Cursors.Arrow;
 		});
 
 		public FractalViewModel()
