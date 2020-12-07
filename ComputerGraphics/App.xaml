@@ -9,13 +9,10 @@
         <DataTemplate DataType="{x:Type viewmodels:MainViewModel}">
             <views:MainView/>
         </DataTemplate>
-        
+
         <DataTemplate DataType="{x:Type viewmodels:FractalViewModel}">
             <views:FractalView/>
         </DataTemplate>
-
-        
-        
 
         <Style TargetType="TextBlock" x:Key="textStyle">
             <Setter Property="FontSize" Value="20"/>

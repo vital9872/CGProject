@@ -14,5 +14,11 @@ namespace ComputerGraphics.ViewModels.Paged
 			MainWindow mw = (MainWindow)App.Current.MainWindow;
 			mw.MainFrame.Navigate(new FractalView());
 		});
+
+		public ICommand NavigateToColor => new RelayCommand((obj) =>
+		{
+			MainWindow mw = (MainWindow)App.Current.MainWindow;
+			mw.MainFrame.Navigate(new ColorPage());
+		});
 	}
 }
