@@ -18,8 +18,16 @@ E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\App.baml
 E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.g.resources
 E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.AssemblyInfoInputs.cache
 E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.AssemblyInfo.cs
-E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.csproj.CoreCompileInputs.cache
 E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.genruntimeconfig.cache
 E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.csprojAssemblyReference.cache
 E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\MainView.g.cs
 E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\MainView.baml
+E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\ColorPage.g.cs
+E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\ColorPage.baml
+E:\3.1\CG\ComputerGraphics\ComputerGraphics\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+E:\3.1\CG\ComputerGraphics\ComputerGraphics\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+E:\3.1\CG\ComputerGraphics\ComputerGraphics\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\3.1\CG\ComputerGraphics\ComputerGraphics\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\3.1\CG\ComputerGraphics\ComputerGraphics\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.csproj.CoreCompileInputs.cache
+E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.csproj.CopyComplete

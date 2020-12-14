@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DKQKcSls7dyUU6sLvveVR1xSuyu7i0tgEQ3GjGwbKVoKLAbnIHlcjJ4lSLMkRmBZcajgKBw5SyDM4B32BbKpuw==",
+  "dgSpecHash": "7Y28xLqZoNXPiz+/f3WzQfCu5rtj3gfIGI1QazsNy6aDEejLzpBWnnuROj46HaEwzfuJGKzBZJEEWbLN+/xjyg==",
   "success": true,
   "projectFilePath": "E:\\3.1\\CG\\ComputerGraphics\\ComputerGraphics\\ComputerGraphics.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vyart\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\vyart\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\vyart\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
