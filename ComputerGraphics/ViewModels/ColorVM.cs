@@ -35,6 +35,7 @@ namespace ComputerGraphics.ViewModels
 		public ColorVM()
 		{
 			_fileName = "No file selected";
+			_fragment = 100;
 		}
 
 		public string FileName
@@ -135,6 +136,21 @@ namespace ComputerGraphics.ViewModels
 			}
 		}
 
+		private byte _fragment;
+		public byte Fragment
+		{
+			get
+			{
+				return _fragment;
+			}
+			set
+			{
+				_fragment = value;
+				OnPropertyChanged(nameof(Fragment));
+				ResultImage = ChangeSaturation(ChangeBrightness((BitmapImage)OriginalImage, _brightness), _saturation);
+			}
+		}
+
 		public ICommand NavigateToMain => new RelayCommand((obj) =>
 		{
 			MainWindow mw = (MainWindow)App.Current.MainWindow;
@@ -227,8 +243,8 @@ namespace ComputerGraphics.ViewModels
 
 			byte[] color = new byte[4];
 
-			int stride = (int)source.PixelWidth * (source.Format.BitsPerPixel / 8);
-			byte[] pixels = new byte[(int)source.PixelHeight * stride];
+			int stride = (int)(source.PixelWidth) * (source.Format.BitsPerPixel / 8);
+			byte[] pixels = new byte[(int)(source.PixelHeight) * stride];
 			source.CopyPixels(pixels, stride, 0);
 
 			for (int i = 0; i < pixels.Length; i += 4)
@@ -248,7 +264,7 @@ namespace ComputerGraphics.ViewModels
 				}
 			}
 
-			dest.WritePixels(new Int32Rect(0, 0, source.PixelWidth, source.PixelHeight), pixels, source.PixelWidth * 4, 0);
+			dest.WritePixels(new Int32Rect(0, 0, (int)(source.PixelWidth * (Fragment / 100.0)), source.PixelHeight), pixels, source.PixelWidth * 4, 0);
 
 			return dest;
 		}
@@ -259,13 +275,13 @@ namespace ComputerGraphics.ViewModels
 
 			byte[] color = new byte[4];
 
-			int stride = (int)source.PixelWidth * (source.Format.BitsPerPixel / 8);
-			byte[] pixels = new byte[(int)source.PixelHeight * stride];
+			int stride = (int)(source.PixelWidth) * (source.Format.BitsPerPixel / 8);
+			byte[] pixels = new byte[(int)(source.PixelHeight) * stride];
 			source.CopyPixels(pixels, stride, 0);
 
 			for (int i = 0; i < pixels.Length; i = i + 4)
             {
-                if (pixels[i] > 128)
+                if (pixels[i] > 50)
                 {
                     pixels[i] = (byte)Math.Min(255, pixels[i] + change_value);
                 }
@@ -273,7 +289,7 @@ namespace ComputerGraphics.ViewModels
                 {
                     pixels[i] = (byte)Math.Max(0, pixels[i] - change_value);
                 }
-                if (pixels[i + 1] > 128)
+                if (pixels[i + 1] > 200)
                 {
                     pixels[i + 1] = (byte)Math.Min(255, pixels[i + 1] + change_value);
                 }
@@ -281,7 +297,7 @@ namespace ComputerGraphics.ViewModels
                 {
                     pixels[i + 1] = (byte)Math.Max(0, pixels[i + 1] - change_value);
                 }
-                if (pixels[i + 2] > 128)
+                if (pixels[i + 2] > 200)
                 {
                     pixels[i + 2] = (byte)Math.Min(255, pixels[i + 2] + change_value);
                 }
@@ -291,7 +307,7 @@ namespace ComputerGraphics.ViewModels
                 }
             }
 
-            dest.WritePixels(new Int32Rect(0, 0, source.PixelWidth, source.PixelHeight), pixels, source.PixelWidth * 4, 0);
+            dest.WritePixels(new Int32Rect(0, 0, (int)(source.PixelWidth * (Fragment / 100.0)), source.PixelHeight), pixels, source.PixelWidth * 4, 0);
 
 			return dest;
 		}

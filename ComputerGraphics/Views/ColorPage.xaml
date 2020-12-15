@@ -75,6 +75,13 @@
                                 <Slider AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="0" 
                                         Minimum="0" Maximum="255" Margin="10 0 10 10" Value="{Binding Saturation}"/>
                             </StackPanel>
+
+                            <StackPanel Grid.Row="3" Grid.ColumnSpan="2">
+                                <TextBlock Style="{StaticResource textStyle}" TextAlignment="Left" Margin="10"
+                                           Text="Fragment:" FontWeight="Medium"/>
+                                <Slider AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="0" 
+                                        Minimum="0" Maximum="100" Margin="10 0 10 10" Value="{Binding Fragment}"/>
+                            </StackPanel>
                         </Grid>
                     </Border>
 
@@ -113,7 +120,7 @@
                     
                     <Button Style="{StaticResource standartBtnStyle}" Command="{Binding ResetCommand}"
                                 Content="Reset" Width="auto"/>
-                    <Button Command="{Binding SavePhotoCommand}" Margin="0 40 10 0" Background="#0E4DA4" HorizontalAlignment="Right" Style="{StaticResource standartBtnStyle}">
+                    <Button Command="{Binding SavePhotoCommand}" Margin="0 10 10 0" Background="#0E4DA4" HorizontalAlignment="Right" Style="{StaticResource standartBtnStyle}">
                         Save</Button>
                 </StackPanel>
             </Border>
