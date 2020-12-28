@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Syncfusion.PdfViewer.WPF;
 
 namespace ComputerGraphics.ViewModels
 {
@@ -88,6 +89,12 @@ namespace ComputerGraphics.ViewModels
 			MainWindow mw = (MainWindow)App.Current.MainWindow;
 			mw.MainFrame.Navigate(new Views.MainView());
 		});
+
+        public ICommand NavigateToHelp => new RelayCommand((obj) =>
+        {
+            MainWindow mw = (MainWindow)App.Current.MainWindow;
+            mw.MainFrame.Navigate(new Views.Help("Fractal"));
+        });
 
 		public ICommand DrawCommand => new RelayCommand((obj) =>
 		{

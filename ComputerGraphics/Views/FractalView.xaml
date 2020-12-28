@@ -93,7 +93,7 @@
                             <!--<Button Background="#0E4DA4" HorizontalAlignment="Left" Style="{StaticResource standartBtnStyle}">Apply</Button>-->
                         </StackPanel>
                     </Border>
-                    <Button Style="{StaticResource buttonStyle}" Width="230" Height="30" FontSize="15" FontWeight="Bold">
+                    <Button Style="{StaticResource buttonStyle}" Command="{Binding NavigateToHelp}" Width="230" Height="30" FontSize="15" FontWeight="Bold">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="../img/information.png" Width="20" Height="20" Margin="0 0 5 0"></Image>
                             <TextBlock>Help</TextBlock>

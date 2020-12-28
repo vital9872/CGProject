@@ -1,0 +1,27 @@
+﻿<Page x:Class="ComputerGraphics.Views.Help"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ComputerGraphics.Views"
+      xmlns:syncfusion="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1380"
+      Title="Help">
+
+    <Grid>
+        <StackPanel>
+            <Border Style="{StaticResource headerBorder}">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource headerStyle}">Help</TextBlock>
+                    <Button Command="{Binding NavigateBack}" Margin="0 10 10 0" Background="#0E4DA4" 
+                            HorizontalAlignment="Left" Style="{StaticResource standartBtnStyle}">
+                        Back</Button>
+                </StackPanel>
+
+            </Border>
+            <syncfusion:PdfDocumentView x:Name="pdfViewer" Width="1100"></syncfusion:PdfDocumentView>
+
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,167 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.NETCore.Platforms/5.0.0": {},
+      "Microsoft.Win32.SystemEvents/5.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "Syncfusion.Compression.Base/18.4.0.31": {
+        "runtime": {
+          "lib/netcoreapp3.1/Syncfusion.Compression.Base.dll": {
+            "assemblyVersion": "18.4310.0.31",
+            "fileVersion": "18.4310.0.31"
+          }
+        }
+      },
+      "Syncfusion.Licensing/18.4.0.31": {
+        "runtime": {
+          "lib/netcoreapp3.1/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "18.4.0.31",
+            "fileVersion": "18.4.0.31"
+          }
+        }
+      },
+      "Syncfusion.Pdf.Wpf/18.4.0.31": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "18.4.0.31",
+          "Syncfusion.Licensing": "18.4.0.31"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Syncfusion.Pdf.Base.dll": {
+            "assemblyVersion": "18.4310.0.31",
+            "fileVersion": "18.4310.0.31"
+          }
+        }
+      },
+      "Syncfusion.PdfViewer.WPF/18.4.0.31": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "18.4.0.31",
+          "Syncfusion.Licensing": "18.4.0.31",
+          "Syncfusion.Pdf.Wpf": "18.4.0.31",
+          "Syncfusion.Shared.WPF": "18.4.0.31"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Syncfusion.PdfViewer.WPF.dll": {
+            "assemblyVersion": "18.4310.0.31",
+            "fileVersion": "18.4310.0.31"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/18.4.0.31": {
+        "dependencies": {
+          "Syncfusion.Licensing": "18.4.0.31"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Syncfusion.Shared.WPF.dll": {
+            "assemblyVersion": "18.4310.0.31",
+            "fileVersion": "18.4310.0.31"
+          }
+        }
+      },
+      "System.Drawing.Common/5.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "5.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          },
+          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
+      "path": "microsoft.win32.systemevents/5.0.0",
+      "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
+    },
+    "Syncfusion.Compression.Base/18.4.0.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9HvFYTmgcNOZWKta0ze7QGNczaJTxZ2GWcJ7s1fNslk1ixt2PVD1JCHWoB6tf/NUOR/Zsrll0W6ZBHKk62MLfQ==",
+      "path": "syncfusion.compression.base/18.4.0.31",
+      "hashPath": "syncfusion.compression.base.18.4.0.31.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/18.4.0.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wLAiGCD34R9BYZEBG8csoMmUjWma1+ieaTYQa2Gde/KEz1vuWXJMkJFr1k2DE4WT9RrOO8Im3XouQeE9/1QoJg==",
+      "path": "syncfusion.licensing/18.4.0.31",
+      "hashPath": "syncfusion.licensing.18.4.0.31.nupkg.sha512"
+    },
+    "Syncfusion.Pdf.Wpf/18.4.0.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9e1E8pCG4LSfP3FwHaPm3pu8J+VbxZeMc5rmLiSzHuL/X70HYN7fFl8MfMe64HXl7RMuwU3JgbC/g/ImVZ5tkQ==",
+      "path": "syncfusion.pdf.wpf/18.4.0.31",
+      "hashPath": "syncfusion.pdf.wpf.18.4.0.31.nupkg.sha512"
+    },
+    "Syncfusion.PdfViewer.WPF/18.4.0.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CXuen+jGvqZWZOAnvGjddUfU0GqXDmn2739WmfyctG8tbE08aB4kRC01ZunsN2OR3SB99rz5NTJHqwOWdAPKPQ==",
+      "path": "syncfusion.pdfviewer.wpf/18.4.0.31",
+      "hashPath": "syncfusion.pdfviewer.wpf.18.4.0.31.nupkg.sha512"
+    },
+    "Syncfusion.Shared.WPF/18.4.0.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zYWbnSnYtPGKG8o7d+6yV7gRgGBCgnhFRm+oIT5xv+vDElTZhYVaqhJPuqgkKAghtjMj1W4w+NEQTkkftm/hXw==",
+      "path": "syncfusion.shared.wpf/18.4.0.31",
+      "hashPath": "syncfusion.shared.wpf.18.4.0.31.nupkg.sha512"
+    },
+    "System.Drawing.Common/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SztFwAnpfKC8+sEKXAFxCBWhKQaEd97EiOL7oZJZP56zbqnLpmxACWA8aGseaUExciuEAUuR9dY8f7HkTRAdnw==",
+      "path": "system.drawing.common/5.0.0",
+      "hashPath": "system.drawing.common.5.0.0.nupkg.sha512"
+    }
+  }
+}

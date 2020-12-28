@@ -157,6 +157,12 @@ namespace ComputerGraphics.ViewModels
 			mw.MainFrame.Navigate(new Views.MainView());
 		});
 
+        public ICommand NavigateToHelp => new RelayCommand((obj) =>
+        {
+            MainWindow mw = (MainWindow)App.Current.MainWindow;
+            mw.MainFrame.Navigate(new Views.Help("Color"));
+        });
+
 		public ICommand OpenFile => new RelayCommand((obj) =>
 		{
 			OpenFileDialog op = new OpenFileDialog();
@@ -289,26 +295,26 @@ namespace ComputerGraphics.ViewModels
                 {
                     pixels[i] = (byte)Math.Max(0, pixels[i] - change_value);
                 }
-                if (pixels[i + 1] > 200)
-                {
-                    pixels[i + 1] = (byte)Math.Min(255, pixels[i + 1] + change_value);
-                }
-                else
-                {
-                    pixels[i + 1] = (byte)Math.Max(0, pixels[i + 1] - change_value);
-                }
-                if (pixels[i + 2] > 200)
-                {
-                    pixels[i + 2] = (byte)Math.Min(255, pixels[i + 2] + change_value);
-                }
-                else
-                {
-                    pixels[i + 2] = (byte)Math.Max(0, pixels[i + 2] - change_value);
-                }
+                //if (pixels[i + 1] > 225)
+                //{
+                //    pixels[i + 1] = (byte)Math.Min(255, pixels[i + 1] + change_value);
+                //}
+                //else
+                //{
+                //    pixels[i + 1] = (byte)Math.Max(0, pixels[i + 1] - change_value);
+                //}
+                //if (pixels[i + 2] > 225)
+                //{
+                //    pixels[i + 2] = (byte)Math.Min(255, pixels[i + 2] + change_value);
+                //}
+                //else
+                //{
+                //    pixels[i + 2] = (byte)Math.Max(0, pixels[i + 2] - change_value);
+                //}
             }
 
-            dest.WritePixels(new Int32Rect(0, 0, (int)(source.PixelWidth * (Fragment / 100.0)), source.PixelHeight), pixels, source.PixelWidth * 4, 0);
-
+            //dest.WritePixels(new Int32Rect(0, 0, (int)(source.PixelWidth * (Fragment / 100.0)), source.PixelHeight), pixels, source.PixelWidth * 4, 0);
+			dest.WritePixels(new Int32Rect(0, 0, source.PixelWidth, source.PixelHeight), pixels, source.PixelWidth * 4, 0);
 			return dest;
 		}
 	}
