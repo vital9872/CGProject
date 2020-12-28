@@ -9,15 +9,19 @@
   <ItemGroup>
     <None Remove="img\home.png" />
     <None Remove="img\information.png" />
+    <None Remove="Info\Fractals.pdf" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Syncfusion.Pdf.Wpf" Version="18.4.0.31" />
+    <PackageReference Include="Syncfusion.PdfViewer.WPF" Version="18.4.0.31" />
     <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="img\home.png" />
     <Resource Include="img\information.png" />
+    <Resource Include="Info\Fractals.pdf" />
   </ItemGroup>
 
 </Project>

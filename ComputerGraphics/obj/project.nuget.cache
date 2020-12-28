@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "7Y28xLqZoNXPiz+/f3WzQfCu5rtj3gfIGI1QazsNy6aDEejLzpBWnnuROj46HaEwzfuJGKzBZJEEWbLN+/xjyg==",
+  "dgSpecHash": "614pQJJiBviCSE49VYZAg0u8cv7wdU1knt1N60pccW/Te5sDWW9FThDSlg8MdM1jox4DKrP6OGRosSqpHsYA1A==",
   "success": true,
   "projectFilePath": "E:\\3.1\\CG\\ComputerGraphics\\ComputerGraphics\\ComputerGraphics.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vyart\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\vyart\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\vyart\\.nuget\\packages\\syncfusion.compression.base\\18.4.0.31\\syncfusion.compression.base.18.4.0.31.nupkg.sha512",
+    "C:\\Users\\vyart\\.nuget\\packages\\syncfusion.licensing\\18.4.0.31\\syncfusion.licensing.18.4.0.31.nupkg.sha512",
+    "C:\\Users\\vyart\\.nuget\\packages\\syncfusion.pdf.wpf\\18.4.0.31\\syncfusion.pdf.wpf.18.4.0.31.nupkg.sha512",
+    "C:\\Users\\vyart\\.nuget\\packages\\syncfusion.pdfviewer.wpf\\18.4.0.31\\syncfusion.pdfviewer.wpf.18.4.0.31.nupkg.sha512",
+    "C:\\Users\\vyart\\.nuget\\packages\\syncfusion.shared.wpf\\18.4.0.31\\syncfusion.shared.wpf.18.4.0.31.nupkg.sha512",
     "C:\\Users\\vyart\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512"
   ],
   "logs": []

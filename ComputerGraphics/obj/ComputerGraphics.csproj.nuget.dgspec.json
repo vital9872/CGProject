@@ -38,6 +38,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Syncfusion.Pdf.Wpf": {
+              "target": "Package",
+              "version": "[18.4.0.31, )"
+            },
+            "Syncfusion.PdfViewer.WPF": {
+              "target": "Package",
+              "version": "[18.4.0.31, )"
+            },
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[5.0.0, )"
