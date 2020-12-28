@@ -3,7 +3,7 @@ using ComputerGraphics.Commands;
 
 namespace ComputerGraphics.ViewModels
 {
-    public class HelpColorViewModel : BaseViewModel
+    public class HelpColorViewModel : BasePropertyChanged
     {
         public ICommand NavigateBack => new RelayCommand((obj) =>
         {

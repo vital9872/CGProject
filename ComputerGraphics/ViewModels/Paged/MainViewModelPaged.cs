@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace ComputerGraphics.ViewModels.Paged
 {
-	class MainViewModelPaged: BaseViewModel
+	class MainViewModelPaged: BasePropertyChanged
 	{
 		public ICommand NavigateToFractal => new RelayCommand((obj) =>
 		{

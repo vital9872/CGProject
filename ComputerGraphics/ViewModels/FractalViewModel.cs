@@ -11,7 +11,7 @@ using Syncfusion.PdfViewer.WPF;
 
 namespace ComputerGraphics.ViewModels
 {
-	public class FractalViewModel : BaseViewModel
+	public class FractalViewModel : BasePropertyChanged
 	{
 		double _real, _imaginatory, _scale;
 		int _fractalType, _schemeIndex;

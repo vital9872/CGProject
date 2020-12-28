@@ -6,7 +6,7 @@ using System.Windows.Input;
 
 namespace ComputerGraphics.ViewModels
 {
-    public class HelpFractalViewModel : BaseViewModel
+    public class HelpFractalViewModel : BasePropertyChanged
     {
         public ICommand NavigateBack => new RelayCommand((obj) =>
         {

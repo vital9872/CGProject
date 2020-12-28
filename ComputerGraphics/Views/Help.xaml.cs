@@ -24,7 +24,7 @@ namespace ComputerGraphics.Views
         {
             InitializeComponent();
             string cur = Environment.CurrentDirectory;
-            BaseViewModel vm = new BaseViewModel();
+            BasePropertyChanged vm = new BasePropertyChanged();
             switch (type)
             {
                 case "Fractal":

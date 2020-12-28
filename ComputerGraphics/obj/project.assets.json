@@ -381,30 +381,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vyart\\.nuget\\packages\\": {}
+    "C:\\Users\\andre\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\3.1\\CG\\ComputerGraphics\\ComputerGraphics\\ComputerGraphics.csproj",
+      "projectUniqueName": "D:\\University\\student\\3 kurs\\semester 5\\Computer Graphics\\Lab4-6\\CGProject\\ComputerGraphics\\ComputerGraphics.csproj",
       "projectName": "ComputerGraphics",
-      "projectPath": "E:\\3.1\\CG\\ComputerGraphics\\ComputerGraphics\\ComputerGraphics.csproj",
-      "packagesPath": "C:\\Users\\vyart\\.nuget\\packages\\",
-      "outputPath": "E:\\3.1\\CG\\ComputerGraphics\\ComputerGraphics\\obj\\",
+      "projectPath": "D:\\University\\student\\3 kurs\\semester 5\\Computer Graphics\\Lab4-6\\CGProject\\ComputerGraphics\\ComputerGraphics.csproj",
+      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+      "outputPath": "D:\\University\\student\\3 kurs\\semester 5\\Computer Graphics\\Lab4-6\\CGProject\\ComputerGraphics\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\vyart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -416,6 +423,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Syncfusion.Pdf.Wpf": {
             "target": "Package",
@@ -440,6 +448,16 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.10, 3.1.10]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -448,7 +466,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

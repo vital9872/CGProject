@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ComputerGraphics.ViewModels
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public class BasePropertyChanged : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)

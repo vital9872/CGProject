@@ -34,9 +34,22 @@
                     <TextBlock Style="{StaticResource textStyle}" FontSize="25" Margin="0 10 0 0">Settings</TextBlock>
                     <Border Background="#EDD4B2" Style="{StaticResource headerBorder}" Margin="10 5">
                         <UniformGrid Columns="2" Rows="2">
-                            <StackPanel>
-                                <TextBlock Text="Bottom left X"/>
-                                
+                            <StackPanel Margin="5" DataContext="{Binding Square}">
+                                <TextBlock Text="Bottom left X:"/>
+                                <TextBox Text="{Binding BlX, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
+                            <StackPanel Margin="5">
+                                <TextBlock Text="Bottom left Y:"/>
+                                <TextBox Text="{Binding BlY, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
+                            <StackPanel Margin="5">
+                                <TextBlock Text="Top right X:"/>
+                                <TextBox Text="{Binding BrX, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
+                            <StackPanel Margin="5">
+                                <TextBlock Text="Top right Y:"/>
+                                <TextBox Text="{Binding BrY, UpdateSourceTrigger=PropertyChanged}"
+                                         IsReadOnly="True"/>
                             </StackPanel>
                         </UniformGrid>
                     </Border>

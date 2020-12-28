@@ -38,3 +38,45 @@ E:\3.1\CG\ComputerGraphics\ComputerGraphics\bin\Debug\netcoreapp3.1\Syncfusion.P
 E:\3.1\CG\ComputerGraphics\ComputerGraphics\bin\Debug\netcoreapp3.1\Syncfusion.PdfViewer.WPF.dll
 E:\3.1\CG\ComputerGraphics\ComputerGraphics\bin\Debug\netcoreapp3.1\Syncfusion.Shared.WPF.dll
 E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\Help.baml
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\ComputerGraphics.exe
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\ComputerGraphics.deps.json
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\ComputerGraphics.runtimeconfig.json
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\ComputerGraphics.runtimeconfig.dev.json
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\ComputerGraphics.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\ComputerGraphics.pdb
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\Syncfusion.Compression.Base.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\Syncfusion.Licensing.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\Syncfusion.Pdf.Base.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\Syncfusion.PdfViewer.WPF.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\Syncfusion.Shared.WPF.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.csprojAssemblyReference.cache
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\AffinePage.g.cs
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\ColorPage.g.cs
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\FractalView.g.cs
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\Help.g.cs
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\MainView.g.cs
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\App.g.cs
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics_MarkupCompile.cache
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics_MarkupCompile.lref
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\App.baml
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\AffinePage.baml
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\ColorPage.baml
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\FractalView.baml
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\Help.baml
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\MainView.baml
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.g.resources
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.AssemblyInfoInputs.cache
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.AssemblyInfo.cs
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.csproj.CoreCompileInputs.cache
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.csproj.CopyComplete
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.pdb
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.genruntimeconfig.cache

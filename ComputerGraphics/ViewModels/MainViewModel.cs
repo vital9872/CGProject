@@ -6,10 +6,10 @@ using System.Windows.Input;
 
 namespace ComputerGraphics.ViewModels
 {
-    public class MainViewModel : BaseViewModel
+    public class MainViewModel : BasePropertyChanged
     {
-        private BaseViewModel selectedViewModel;
-        public BaseViewModel SelectedViewModel
+        private BasePropertyChanged selectedViewModel;
+        public BasePropertyChanged SelectedViewModel
         {
             get { return selectedViewModel; }
             set

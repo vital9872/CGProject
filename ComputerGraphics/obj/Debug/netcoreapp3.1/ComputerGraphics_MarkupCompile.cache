@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\3.1\CG\ComputerGraphics\ComputerGraphics\obj\Debug\netcoreapp3.1\
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\
 ComputerGraphics
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-E:\3.1\CG\ComputerGraphics\ComputerGraphics\App.xaml
-51963035872
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\App.xaml
+61715153792
 
-28-522703724
-198-2012256391
-MainWindow.xaml;Views\ColorPage.xaml;Views\FractalView.xaml;Views\Help.xaml;Views\MainView.xaml;
+29-501393505
+198-1804252075
+MainWindow.xaml;Views\AffinePage.xaml;Views\ColorPage.xaml;Views\FractalView.xaml;Views\Help.xaml;Views\MainView.xaml;
 
 False
 

@@ -20,7 +20,7 @@ namespace ComputerGraphics.ViewModels
 	
 	
 
-	class ColorVM : BaseViewModel
+	class ColorVM : BasePropertyChanged
 	{
 		private string _fileName;
 		private ImageSource _originalImage;
