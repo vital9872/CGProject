@@ -102,13 +102,14 @@ namespace ComputerGraphics.ViewModels
 			moveToCenterMatrix[1][2] = 0;
 
 			moveToCenterMatrix[2][0] = Math.Abs(left.X + right.X) / -2;
-			moveToCenterMatrix[2][1] = Math.Abs(left.Y + right.Y) / 2;
+			moveToCenterMatrix[2][1] = Math.Abs(left.Y + right.Y) / -2;
 			moveToCenterMatrix[2][2] = 1;
 
-			scaleMatrix = MultiplyMatrixes(scaleMatrix, moveToCenterMatrix);
+			var res = MultiplyMatrixes(moveToCenterMatrix, angleMatrix);
+			res = MultiplyMatrixes(res, scaleMatrix);
 			moveToCenterMatrix[2][0] *= -1;
 			moveToCenterMatrix[2][1] *= -1;
-			scaleMatrix = MultiplyMatrixes(scaleMatrix, moveToCenterMatrix);
+			res = MultiplyMatrixes(res, moveToCenterMatrix);
 
 			double[][] moveMatrix = new double[3][];
 			for(int i = 0; i < 3; ++i)
@@ -127,8 +128,7 @@ namespace ComputerGraphics.ViewModels
 			moveMatrix[2][1] = -yDir;
 			moveMatrix[2][2] = 1;
 
-			
-			return MultiplyMatrixes(MultiplyMatrixes(angleMatrix, moveMatrix), scaleMatrix);
+			return MultiplyMatrixes(res, moveMatrix);
 		}
 
 		private double[][] MultiplyMatrixes(double[][] matrix, double[][] multiplier)
