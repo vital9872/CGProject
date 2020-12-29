@@ -22,8 +22,8 @@ namespace ComputerGraphics.ViewModels
 			left = new Point(0, 0);
 			right = new Point(10, 10);
 			scale = 1;
-			xDir = 0;
-			yDir = 0;
+			xDir = 250;
+			yDir = -250;
 			DrawAffine();
 		}
 

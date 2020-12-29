@@ -14,18 +14,18 @@
             <RowDefinition Height="13.2*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Background="#D0A98F" Width="1380" Height="56">
-            <TextBlock Style="{StaticResource textStyle}" Margin="20 0 1170 0" VerticalAlignment="Center" 
-                       Text="Affine transformations"/>
-            <Button HorizontalAlignment="Right" x:Name="Main" Content="Main"
-                        Command="{Binding NavigateToMain}">
+        <Grid Grid.Row="0" Background="#D0A98F" Height="56">
+            <TextBlock Style="{StaticResource textStyle}" Margin="20 0 0 0" VerticalAlignment="Center" 
+                       Text="Affine transformations" HorizontalAlignment="Left"/>
+            <Button HorizontalAlignment="Right" x:Name="Main" Content="Main" Margin="20 0"
+                        Command="{Binding NavigateToMain}" VerticalAlignment="Center">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Width="32" Height="32" Source="../img/home.png"/>
+                        <Image Width="32" Height="32" Source="pack://application:,,,/img/home.png"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-        </StackPanel>
+        </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -128,7 +128,9 @@
                                 Content="Reset" Width="auto"/>
                 </StackPanel>
             </Border>
-            <Image Source="{Binding AffineImage}" Grid.Column="1"/>
+            <Border Grid.Column="1" Background="{x:Static Brushes.Gray}">
+                <Image Source="{Binding AffineImage}" />
+            </Border>
         </Grid>
     </Grid>
 </Page>
