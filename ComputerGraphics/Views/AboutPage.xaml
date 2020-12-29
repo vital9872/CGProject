@@ -1,0 +1,35 @@
+﻿<Page x:Class="ComputerGraphics.Views.AboutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ComputerGraphics.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1280"
+      Title="AboutPage">
+
+    <Grid>
+        <StackPanel>
+            <Border Style="{StaticResource headerBorder}" Grid.Row="0" VerticalAlignment="Stretch">
+                <TextBlock Style="{StaticResource headerStyle}">About program</TextBlock>
+            </Border>
+            <TextBlock TextWrapping="Wrap" Style="{StaticResource textStyle}" Margin="10 10 10 400">
+                Навчальна програма розроблена на лабораторних роботах з комп’ютерної графіки.
+                Програма розрахована на: побудову фракталів Жуліа та Мандельброта з різними параметрами 
+                та у різних кольорових схемах; роботу з моделями кольорів та перетворення однієї моделі 
+                в іншу; афінні перетворення, що виконуються над чотирикутником, заданого за координатами 
+                його діагоналі.
+            </TextBlock>
+            <StackPanel VerticalAlignment="Bottom">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource textStyle}">
+                    Автори: Андрій Стегура, Віталій яртим
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource textStyle}">
+                    Група ПЗ-35. 2020 рік
+                </TextBlock>
+                <Button Content="Back" Command="{Binding NavigateToMain}" Style="{StaticResource buttonStyle}"
+                        Width="100"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

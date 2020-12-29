@@ -26,5 +26,15 @@ namespace ComputerGraphics.ViewModels.Paged
 			MainWindow mw = (MainWindow)App.Current.MainWindow;
 			mw.MainFrame.Navigate(new AffinePage());
 		});
+
+		public ICommand NavigateToAbout => new RelayCommand((obj) =>
+		{
+			MainWindow mw = (MainWindow)App.Current.MainWindow;
+			mw.MainFrame.Navigate(new AboutPage());
+		});
+		public ICommand ExitCommand => new RelayCommand((obj) =>
+		{
+			App.Current.Shutdown();
+		});
 	}
 }
