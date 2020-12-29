@@ -176,6 +176,19 @@ namespace ComputerGraphics.ViewModels
 			AffineImage = new DrawingImage(drawingGroup);
 		}
 
+		public ICommand ResetCommand => new RelayCommand((obj) =>
+		{
+			bLeftX = 0;
+			bLeftY = 0;
+			tRightX = 10;
+			tRightY = 10;
+			xDir = 0;
+			yDir = 0;
+			Angle = 0;
+			Scale = 1;
+			DrawAffine();
+		});
+
 		public ICommand MoveCommand => new RelayCommand((obj) =>
 		{
 			Direction direction = (Direction)obj;
