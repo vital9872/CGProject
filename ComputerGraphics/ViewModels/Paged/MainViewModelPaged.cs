@@ -20,5 +20,11 @@ namespace ComputerGraphics.ViewModels.Paged
 			MainWindow mw = (MainWindow)App.Current.MainWindow;
 			mw.MainFrame.Navigate(new ColorPage());
 		});
+
+		public ICommand NavigateToAffine => new RelayCommand((obj) =>
+		{
+			MainWindow mw = (MainWindow)App.Current.MainWindow;
+			mw.MainFrame.Navigate(new AffinePage());
+		});
 	}
 }

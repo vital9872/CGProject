@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="img\ArrowDown.png" />
+    <None Remove="img\ArrowLeft.png" />
+    <None Remove="img\ArrowRight.png" />
+    <None Remove="img\ArrowUp.png" />
     <None Remove="img\home.png" />
     <None Remove="img\information.png" />
     <None Remove="Info\Fractals.pdf" />
@@ -19,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="img\ArrowDown.png" />
+    <Resource Include="img\ArrowLeft.png" />
+    <Resource Include="img\ArrowRight.png" />
+    <Resource Include="img\ArrowUp.png" />
     <Resource Include="img\home.png" />
     <Resource Include="img\information.png" />
     <Resource Include="Info\Fractals.pdf" />

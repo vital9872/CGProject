@@ -18,7 +18,9 @@
             <Button Style="{StaticResource buttonStyle}" Command="{Binding NavigateToColor}">
                 Work with photo
             </Button>
-            <Button Style="{StaticResource buttonStyle}" Margin="0 10 0 80">Affine transformation</Button>
+            <Button Style="{StaticResource buttonStyle}" Margin="0 10 0 80" Command="{Binding NavigateToAffine}">
+                Affine transformation
+            </Button>
             <Button Style="{StaticResource buttonStyle}" Width="400" Height="80">About program</Button>
             <Button Style="{StaticResource buttonStyle}" Width="400" Height="80">Exit</Button>
         </StackPanel>    

@@ -21,6 +21,7 @@ namespace ComputerGraphics.Views
 		public AffinePage()
 		{
 			InitializeComponent();
+			DataContext = new ViewModels.AffiineVM();
 		}
 	}
 }
