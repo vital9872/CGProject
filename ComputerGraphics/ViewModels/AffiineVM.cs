@@ -1,4 +1,5 @@
 ﻿using ComputerGraphics.Commands;
+using OxyPlot;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,17 +14,17 @@ namespace ComputerGraphics.ViewModels
 	{
 		private Point left, right;
 		private double[][] square;
-		private DrawingImage affineImage;
 		private double xDir, yDir;
+		IEnumerable<DataPoint> dataPoints;
 
 		private double angle, scale;
 		public AffiineVM()
 		{
 			left = new Point(0, 0);
 			right = new Point(10, 10);
-			scale = 1;
-			xDir = 250;
-			yDir = -250;
+			scale = 100;
+			xDir = 0;
+			yDir = 0;
 			DrawAffine();
 		}
 
@@ -77,12 +78,12 @@ namespace ComputerGraphics.ViewModels
 			for(int i = 0; i < 3; ++i)
 				scaleMatrix[i] = new double[3];
 
-			scaleMatrix[0][0] = scale;
+			scaleMatrix[0][0] = scale / 100;
 			scaleMatrix[0][1] = 0;
 			scaleMatrix[0][2] = 0;
 
 			scaleMatrix[1][0] = 0;
-			scaleMatrix[1][1] = scale;
+			scaleMatrix[1][1] = scale / 100;
 			scaleMatrix[1][2] = 0;
 
 			scaleMatrix[2][0] = 0;
@@ -125,7 +126,7 @@ namespace ComputerGraphics.ViewModels
 			moveMatrix[1][2] = 0;
 
 			moveMatrix[2][0] = xDir;
-			moveMatrix[2][1] = -yDir;
+			moveMatrix[2][1] = yDir;
 			moveMatrix[2][2] = 1;
 
 			return MultiplyMatrixes(res, moveMatrix);
@@ -148,32 +149,14 @@ namespace ComputerGraphics.ViewModels
 		private void DrawAffine()
 		{
 			SetSquare();
-			PathFigure pathFigure = new PathFigure();
-			pathFigure.StartPoint = new Point(square[0][0], square[0][1]);
-			pathFigure.Segments.Add(new LineSegment(new Point(square[0][0], square[0][1]), true));
-			pathFigure.Segments.Add(new LineSegment(new Point(square[1][0], square[1][1]), true));
-			pathFigure.Segments.Add(new LineSegment(new Point(square[2][0], square[2][1]), true));
-			pathFigure.Segments.Add(new LineSegment(new Point(square[3][0], square[3][1]), true));
-			pathFigure.IsClosed = true;
-			PathGeometry pathGeometry = new PathGeometry();
-			pathGeometry.Figures.Add(pathFigure);
-
-
-			GeometryDrawing geometryDrawing = new GeometryDrawing();
-			geometryDrawing.Brush = System.Windows.Media.Brushes.Red;
-			geometryDrawing.Geometry = pathGeometry;
-
-			RectangleGeometry filler = new RectangleGeometry(
-				new Rect(0, 0, 500, 500));
-			GeometryDrawing fillerDrawing = new GeometryDrawing();
-			fillerDrawing.Brush = Brushes.Gray;
-			fillerDrawing.Geometry = filler;
-
-			DrawingGroup drawingGroup = new DrawingGroup();
-			drawingGroup.Children.Add(fillerDrawing);
-			drawingGroup.Children.Add(geometryDrawing);
-
-			AffineImage = new DrawingImage(drawingGroup);
+			List<DataPoint> points = new List<DataPoint>();
+			points.Add(new DataPoint(square[0][0], square[0][1]));
+			points.Add(new DataPoint(square[0][0], square[0][1]));
+			points.Add(new DataPoint(square[1][0], square[1][1]));
+			points.Add(new DataPoint(square[2][0], square[2][1]));
+			points.Add(new DataPoint(square[3][0], square[3][1]));
+			points.Add(new DataPoint(square[0][0], square[0][1]));
+			Points = points;
 		}
 
 		public ICommand ResetCommand => new RelayCommand((obj) =>
@@ -241,16 +224,6 @@ namespace ComputerGraphics.ViewModels
 			mw.MainFrame.Navigate(new Views.Help("Affine"));
 		});
 
-		public DrawingImage AffineImage
-		{
-			get => affineImage;
-			set
-			{
-				affineImage = value;
-				OnPropertyChanged(nameof(AffineImage));
-			}
-		}
-
 		public double bLeftX
 		{
 			get => left.X;
@@ -308,6 +281,16 @@ namespace ComputerGraphics.ViewModels
 				scale = value;
 				DrawAffine();
 				OnPropertyChanged(nameof(Scale));
+			}
+		}
+
+		public IEnumerable<DataPoint> Points 
+		{
+			get => dataPoints;
+			set
+			{
+				dataPoints = value;
+				OnPropertyChanged(nameof(Points));
 			}
 		}
 	}

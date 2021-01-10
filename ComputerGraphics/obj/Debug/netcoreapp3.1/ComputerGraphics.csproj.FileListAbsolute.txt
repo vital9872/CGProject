@@ -82,3 +82,5 @@ D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\Compu
 D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\ComputerGraphics.genruntimeconfig.cache
 D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\AboutPage.g.cs
 D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\obj\Debug\netcoreapp3.1\Views\AboutPage.baml
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\OxyPlot.dll
+D:\University\student\3 kurs\semester 5\Computer Graphics\Lab4-6\CGProject\ComputerGraphics\bin\Debug\netcoreapp3.1\OxyPlot.Wpf.dll

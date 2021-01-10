@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ComputerGraphics.Views"
       xmlns:vm="clr-namespace:ComputerGraphics.ViewModels"
-      mc:Ignorable="d" 
-            d:DesignHeight="700" d:DesignWidth="1280">
+      xmlns:oxy="http://oxyplot.org/wpf"
+      mc:Ignorable="d" d:DesignHeight="700" d:DesignWidth="1280">
 
     <Grid Background="#FFFFFF">
         <Grid.RowDefinitions>
@@ -61,7 +61,7 @@
                     </Border>
                     <Border Background="#EDD4B2" Style="{StaticResource headerBorder}" Margin="10 5">
                         <StackPanel>
-                            <TextBlock Text="Rotate:" FontSize="18" FontWeight="Medium" Margin="5"/>
+                            <TextBlock Text="Rotate(degrees):" FontSize="18" FontWeight="Medium" Margin="5"/>
                             <TextBox Text="{Binding Angle, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
                         </StackPanel>
                     </Border>
@@ -69,7 +69,7 @@
                     <Border Background="#EDD4B2" Style="{StaticResource headerBorder}" Margin="10 5">
                         <StackPanel>
                             <StackPanel>
-                                <TextBlock Text="Scale:" FontSize="18" FontWeight="Medium" Margin="5"/>
+                                <TextBlock Text="Scale(%):" FontSize="18" FontWeight="Medium" Margin="5"/>
                                 <TextBox Text="{Binding Scale, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
                             </StackPanel>
                         </StackPanel>
@@ -128,8 +128,19 @@
                                 Content="Reset" Width="auto"/>
                 </StackPanel>
             </Border>
-            <Border Grid.Column="1" Background="{x:Static Brushes.Gray}">
-                <Image Source="{Binding AffineImage}" />
+            <Border Grid.Column="1" Name="plotBorder">
+                <oxy:Plot Width="{Binding ElementName=plotBorder, Path=ActualHeight}" 
+                          Height="{Binding ElementName=plotBorder, Path=ActualHeight}"
+                          PlotAreaBorderThickness="0">
+                    <oxy:Plot.Axes>
+                        <oxy:LinearAxis Position="Left" Minimum="-100" Maximum="100" PositionAtZeroCrossing="True"
+                                        MinorStep="1" MajorStep="10"/>
+                        <oxy:LinearAxis Position="Bottom" Minimum="-100" Maximum="100" PositionAtZeroCrossing="True"
+                                        MinorStep="1" MajorStep="10"/>
+                    </oxy:Plot.Axes>
+                    <oxy:AreaSeries ItemsSource="{Binding Points}" Color="Red"/>
+                </oxy:Plot>
+                <!--<Image Source="{Binding AffineImage}" />-->
             </Border>
         </Grid>
     </Grid>

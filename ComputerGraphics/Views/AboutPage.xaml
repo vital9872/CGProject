@@ -22,7 +22,7 @@
             </TextBlock>
             <StackPanel VerticalAlignment="Bottom">
                 <TextBlock TextWrapping="Wrap" Style="{StaticResource textStyle}">
-                    Автори: Андрій Стегура, Віталій яртим
+                    Автори: Андрій Стегура, Віталій Яртим
                 </TextBlock>
                 <TextBlock TextWrapping="Wrap" Style="{StaticResource textStyle}">
                     Група ПЗ-35. 2020 рік

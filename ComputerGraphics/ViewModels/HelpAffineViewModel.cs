@@ -8,7 +8,7 @@ namespace ComputerGraphics.ViewModels
         public ICommand NavigateBack => new RelayCommand((obj) =>
         {
             MainWindow mw = (MainWindow)App.Current.MainWindow;
-            mw.MainFrame.Navigate(new Views.FractalView());
+            mw.MainFrame.Navigate(new Views.AffinePage());
         });
     }
 }
